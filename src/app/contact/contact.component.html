@@ -1,0 +1,57 @@
+<nav id="desktop-nav">
+    <div class="logo">John Doe</div>
+    <div>
+      <ul class="nav-links">
+        <li><a routerLink="/profile">Profile</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/experience">Experience</a></li>
+        <li><a routerLink="/projects">Projects</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a routerLink="/profile" onclick="toggleMenu()">Profile</a></li>
+        <li><a routerLink="/about" onclick="toggleMenu()">About</a></li>
+        <li><a routerLink="/experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a routerLink="/projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a routerLink="/contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+<section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:01099073630@gmail.com">Email</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    
+      
+    <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+  </footer>

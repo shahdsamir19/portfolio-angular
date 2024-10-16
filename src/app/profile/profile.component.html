@@ -1,0 +1,79 @@
+<nav id="desktop-nav">
+    <div class="logo">John Doe</div>
+    <div>
+      <ul class="nav-links">
+        <li><a routerLink="/profile">Profile</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/experience">Experience</a></li>
+        <li><a routerLink="/projects">Projects</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a routerLink="/profile" onclick="toggleMenu()">Profile</a></li>
+        <li><a routerLink="/about" onclick="toggleMenu()">About</a></li>
+        <li><a routerLink="/experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a routerLink="/projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a routerLink="/contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">John Doe</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('../assets/resume-example.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="../assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://linkedin.com/'"
+        />
+        <img
+          src="../assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/'"
+        />
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+            <li><a routerLink="/profile">Profile</a></li>
+            <li><a routerLink="/about">About</a></li>
+            <li><a routerLink="/experience">Experience</a></li>
+            <li><a routerLink="/projects">Projects</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+  </footer>
+
